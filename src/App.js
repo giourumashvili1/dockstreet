@@ -6,17 +6,20 @@ import { GlobalStyle } from "./globalStyles";
 import Products from './components/Products';
 import Feature from "./components/Feature";
 import Footer from "./components/Footer/Index";
+import { Element } from "react-scroll";
 
 
 function App() {
   return (
     <Router>
-      <GlobalStyle/>
+      <GlobalStyle />
       <Hero />
-      <Products heading='Popular Choices' data={productData}/>
-      <Feature/>
-      <Products heading='Lunch Munch' data={productDataTwo}/>
-      <Footer/>
+      <Element name="products-breakfast">
+        <Products heading='Popular Choices' data={productData} />
+      </Element>
+      <Feature />
+      <Products heading='Lunch Munch' data={productDataTwo} />
+      <Footer />
     </Router>
   );
 }

@@ -7,18 +7,21 @@ import Products from './components/Products';
 import Feature from "./components/Feature";
 import Footer from "./components/Footer/Index";
 import { Element } from "react-scroll";
+import { imageData } from "./components/Hero/data";
 
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Hero />
+      <Hero data={imageData} />
       <Element name="products-breakfast">
         <Products heading='Popular Choices' data={productData} />
       </Element>
       <Feature />
-      <Products heading='Lunch Munch' data={productDataTwo} />
+      <Element name="products-lunch">
+      <Products heading='Lunch Specials' data={productDataTwo} />
+      </Element>
       <Footer />
     </Router>
   );

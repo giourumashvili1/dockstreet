@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import ImgBg from '../../images/dock-street-image2.jpeg';
+import ImgBg from '../../images/background.jpeg';
 
 export const HeroContainer = styled.div`
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg});
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(${ImgBg});
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -65,3 +65,48 @@ export const HeroItems = styled.div`
         color: #000;
     }
  `
+
+ export const HeroMenuHeading = styled.div`
+ height: 35px;
+ width: 50vw;
+ background: black;
+ font-size: 24px;
+ border-radius: 5px;
+ border: solid 5px;
+ border-color: red;
+ text-decoration:none;
+ text-align: center;
+ align-item:center;
+ margin-top:15px
+ `
+
+ export const HeroMenuSign = styled.img`
+  height: 210px;
+  width: 150px
+  margin-top: -20px;
+  margin-left: 30px;
+  background:rgba(255, 0, 0, 0.5);
+  border-radius:5px;
+  border:solid 5px;
+  border-color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.2);
+  }
+
+ `
+ export const HeroMenuContainer = styled.div`
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: left;
+ margin: 0 auto;
+  height:89vh;
+  width:50vw;
+//   background: rgba(255,255,255, 0.2);
+  position:absolute;
+  top: 5rem;
+  right:2rem;
+  border-radius:2px
+ `
+

@@ -25,7 +25,7 @@ export const ProductWrapper = styled.div`
   height: 300px;
   min-width: 300px;
   max-width: 100%;
-  box-shadow: 8px 8px grey;
+  box-shadow: 8px 8px black;
   border-radius: 5px;
  `
 

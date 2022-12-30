@@ -74,3 +74,8 @@ export const ProductWrapper = styled.div`
     color:#000;
   }
  `
+ export const CardWrapper = styled.div`
+ height:30vh;
+ width:20vw;
+ margin-left: 50px;
+ `

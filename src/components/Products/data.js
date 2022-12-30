@@ -1,6 +1,7 @@
-import breakfast1 from '../../images/breakfast1.jpeg'
+import breakfast1 from '../../images/breakfast1.png'
 import breakfast2 from '../../images/breakfast2.jpeg'
 import breakfast3 from '../../images/breakfast3.jpeg'
+import breakfast4 from '../../images/breakfast4.jpeg'
 import lunch1 from '../../images/cheesburger.jpeg'
 import lunch2 from '../../images/tuna-melt.jpeg'
 import lunch3 from '../../images/blt.jpeg'
@@ -29,7 +30,15 @@ export const productData = [
         desc: '3 Slices of French Toast with butter and syrup',
         price: '$12.99',
         button: 'Add to cart'
-    }
+    },
+    {
+        img: breakfast4,
+        alt: 'Breakfast',
+        name: 'Stake and Eggs',
+        desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
+        price: '$17.99',
+        button: 'Add to cart'
+    },
 ]
 export const productDataTwo = [
     {
@@ -51,9 +60,17 @@ export const productDataTwo = [
     {
         img: lunch3,
         alt: 'Lunch',
-        name: 'BLT',
-        desc: 'Bacon Lettuce Tomato',
-        price: '$5.99',
+        name: 'Tuna Melt',
+        desc: 'Tuna fish on grilled cheese',
+        price: '$7.99',
         button: 'Add to cart'
-    }
+    },
+    {
+        img: lunch1,
+        alt: 'Lunch',
+        name: 'Tuna Melt',
+        desc: 'Tuna fish on grilled cheese',
+        price: '$7.99',
+        button: 'Add to cart'
+    },
 ]

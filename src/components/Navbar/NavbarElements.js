@@ -31,7 +31,7 @@ export const NavIcon = styled.div`
     top: 0;
     right: 0;
     cursor: pointer;
-    color: #fff;
+    color: #FFFF00;
 
     &:hover {
         backgorund: #fff;
@@ -42,12 +42,14 @@ export const NavIcon = styled.div`
 
     p{
         transform: translate(-175%, 100%);
-        font-size: 24px;
+        font-size: 28px;
     }
 `
 
 export const Bars = styled(MdFreeBreakfast)`
     font-size: 2rem;
+    margin-top: -30%;
+    margin-left: -35%;
     transform: translate(-50%, 15%);
     `
 

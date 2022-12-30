@@ -16,9 +16,9 @@ const Hero = ({data}) => {
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <HeroContent>
             <HeroItems>
-                <HeroH1>Dockstreet Café</HeroH1>
+                <HeroH1>Dock street Coffee Shop</HeroH1>
                 <HeroP>Ready in 2 minutes</HeroP>
-                <HeroBtn>Place order</HeroBtn>
+                <HeroBtn>Full Menu</HeroBtn>
                 <HeroMenuContainer>
                 <HeroMenuHeading >Specials</HeroMenuHeading>
                 <HeroMenuSign src={data.map((element,index)=>{

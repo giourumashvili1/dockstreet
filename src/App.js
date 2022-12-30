@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Hero from "./components/Hero";
 import { productData, productDataTwo } from "./components/Products/data";
@@ -10,7 +10,11 @@ import { Element } from "react-scroll";
 import { imageData } from "./components/Hero/data";
 
 
+
+
+
 function App() {
+  const data = productData;
   return (
     <Router>
       <GlobalStyle />
@@ -20,7 +24,7 @@ function App() {
       </Element>
       <Feature />
       <Element name="products-lunch">
-      <Products heading='Lunch Specials' data={productDataTwo} />
+        <Products heading='Popular Choices' data={productDataTwo} />
       </Element>
       <Footer />
     </Router>

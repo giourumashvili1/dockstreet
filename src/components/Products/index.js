@@ -1,4 +1,6 @@
 import React from 'react';
+import Card from './Card';
+import { productData } from './data';
 import {
     ProductsContainer,
     ProductsHeading,
@@ -9,32 +11,33 @@ import {
     ProductInfo,
     ProductDesc,
     ProductPrice,
-    ProductButton
+    ProductButton,
 } from './ProductsElements';
+import breakfastImage from '../../images/breakfast1.jpeg';
+import MyCustomArrow from './MyCustomArrow';
+
+
+
+
+
 
 
 
 const Products = ({heading,data}) => {
+
   return (
-    <ProductsContainer >
+      <ProductsContainer >
         <ProductsHeading>{heading}</ProductsHeading>
         <ProductWrapper>
+            {/* <MyCustomArrow/> */}
             {data.map((product,index)=>{
                 return(
-                    <ProductCard key={index}>
-                        <ProductImg src={product.img} alt={product.alt}/>
-                        <ProductInfo>
-                            <ProductTitle>{product.name}</ProductTitle>
-                            <ProductDesc>{product.desc}</ProductDesc>
-                            <ProductPrice>{product.price}</ProductPrice>
-                            <ProductButton>{product.button}</ProductButton>
-                        </ProductInfo>
-                    </ProductCard>
+                   
+                    <Card img={product.img} border='0' alt='slide009-png' title={product.name} desc={product.desc}/>
                 )
             })}
         </ProductWrapper>
     </ProductsContainer>
-
   )
 }
 

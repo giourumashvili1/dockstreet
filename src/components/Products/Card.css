@@ -1,0 +1,35 @@
+.card--title{
+    text-align: center;
+    color:red;
+}
+.card--image{
+    width: 100vw;
+    box-shadow: 10px;
+}
+.card--button{
+    background-color: red;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: -10%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+
+}
+.card--button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-out;
+
+}
+.card--description{
+    text-align: center;
+
+}
+.card--description--icon{
+    margin-left: 10px;
+}
+.arrow-button{
+
+}

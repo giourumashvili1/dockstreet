@@ -1,27 +1,52 @@
-.card{
+.card {}
+
+@media screen and (max-width: 1050px) {
+    .card {
+        right: 4rem;
+        width: 40vw;
+        height: auto !important;
+        margin-top: -5vh;
 
     }
-    @media screen and (max-width: 1050px){
-        .card{
-            right:4rem;
-            width: 40vw;
-            height:50vh;
-            margin-top: -5vh;
-        
-        }
-        .card--button{
-            padding-top: 0px;
-        }
+
+    .card--button {
+        padding-top: 0px;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
     }
-.card--title{
-    text-align: center;
-    color:red;
 }
-.card--image{
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .card {
+        right: 4rem;
+        min-width: 40vw;
+        min-height: 100vw;
+        width: 40vw;
+        height: auto !important;
+        margin-top: -5vh;
+    }
+
+    .card--button {
+        padding-top: 0px;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+    }
+
+}
+
+.card--title {
+    text-align: center;
+    color: red;
+}
+
+.card--image {
     width: 100vw;
     box-shadow: 10px;
 }
-.card--button{
+
+.card--button {
     background-color: red;
     position: relative;
     margin-top: 10%;
@@ -33,19 +58,21 @@
 
 
 }
-.card--button:hover{
+
+.card--button:hover {
     background-color: white;
     color: black;
     transition: 0.3s ease-out;
 
 }
-.card--description{
+
+.card--description {
     text-align: center;
 
 }
-.card--description--icon{
+
+.card--description--icon {
     margin-left: 10px;
 }
-.arrow-button{
 
-}
+.arrow-button {}

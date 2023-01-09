@@ -30,7 +30,7 @@ export const HeroItems = styled.div`
     height: 100vh;
     max-height: 100%;
     padding: 0 2 rem;
-    width: 650px;
+    width: 45%;
     color: #fff;
     text-transform: uppercase;
     line-height: 1;
@@ -104,7 +104,7 @@ export const HeroItems = styled.div`
   height: 210px;
   width: 150px
   margin-top: -20px;
-  margin-left: 30px;
+  margin-left: 3%;
   background:rgba(255, 0, 0, 0.5);
   border-radius:5px;
   border:solid 5px;
@@ -145,6 +145,11 @@ export const HeroItems = styled.div`
  border: solid 5px;
  border-color: red;
  background: #fffdd0;
+
+@media screen and (max-width: 480px){
+  width:60vw;
+  height:auto;
+}
 `
 
 export const HeroHoursHeader = styled.h1`

@@ -37,13 +37,13 @@ export const NavIcon = styled.div`
     }
 
     p{
-        transform: translate(-175%, 100%);
+        transform: translate(-100%, 100%);
         font-size: 28px;
        
     }
 
     @media screen and (max-width: 650px){
-            right:-5rem;
+            // right:-5rem;
             margin-top:-1.5rem;
         }
     
@@ -53,7 +53,7 @@ export const Bars = styled(MdFreeBreakfast)`
     font-size: 2rem;
     margin-top: -30%;
     margin-left: -35%;
-    transform: translate(-50%, 15%);
+    transform: translate(100%, 15%);
     `
 
 

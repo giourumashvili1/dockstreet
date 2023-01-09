@@ -88,7 +88,7 @@ gap: 5rem;
   }
  `
  export const CardWrapper = styled.div`
- height:30vh;
+//  height:30vh; // es kleoba ushlida :D
  width:20vw;
  margin-left: 50px;
 

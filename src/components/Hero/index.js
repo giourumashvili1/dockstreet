@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState,useRef}  from 'react'
+import { useEffect } from 'react';
 import Navbar from '../Navbar'
 import Sidebar from '../Sidebar'
 import { HeroContainer, HeroContent, HeroH1, HeroItems, HeroP, HeroBtn, HeroMenuSign, HeroMenuContainer, HeroMenuHeading, HeroHoursContainer, HeroHoursHeader,HeroHoursHeader2,HeroHoursDesc, } from './HeroElements';
@@ -6,6 +7,20 @@ import { HeroContainer, HeroContent, HeroH1, HeroItems, HeroP, HeroBtn, HeroMenu
 
 const Hero = ({data}) => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isBigScreen, setIsBigScreen] = useState(false);
+
+
+  const windowSize = useRef([window.innerWidth, window.innerHeight])
+  useEffect( ()=> {
+    
+      if(windowSize.current[0] >= 1920){
+        setIsBigScreen(true)
+      } else{
+        setIsBigScreen(false)
+      }
+    })
+  
+
 
   const toggle = () => {
     setIsOpen(!isOpen)
@@ -55,6 +70,24 @@ const Hero = ({data}) => {
                     element.img6
                   )
                 })}/>
+
+                {isBigScreen && [<HeroMenuSign src={data.map((element,index)=>{
+                  return(
+                    element.img7
+                  )
+                })}/>,<HeroMenuSign src={data.map((element,index)=>{
+                  return(
+                    element.img8
+                  )
+                })}/>,<HeroMenuSign src={data.map((element,index)=>{
+                  return(
+                    element.img9
+                  )
+                })}/>,<HeroMenuSign src={data.map((element,index)=>{
+                  return(
+                    element.img10
+                  )
+                })}/>]}
                 </HeroMenuContainer>
             </HeroItems>
         </HeroContent>

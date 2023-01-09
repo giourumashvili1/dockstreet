@@ -6,6 +6,9 @@ export const HeroContainer = styled.div`
     height: 100vh;
     background-position: center;
     background-size: cover;
+    @media screen and (max-width: 650px){
+      width:100vw;
+  }
 `
 
 export const HeroContent = styled.div`
@@ -13,6 +16,9 @@ export const HeroContent = styled.div`
  max-height: 100%;
  width: 100vw;
  padding: 0rem calc(100vw - 1300px) /2;
+ @media screen and (max-width: 650px){
+  width:100vw;
+}
 
 `
 
@@ -43,11 +49,15 @@ export const HeroItems = styled.div`
     margin-bottom: 1rem;
     box-shadow: 3px 5px red;
     letter-spacing: 3px;
+    @media screen and (max-width: 650px){
+      width:100vw;
+  }
  `
 
  export const HeroP = styled.p`
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-bottom: 2rem;
+    
  `
 
  export const HeroBtn = styled.button`
@@ -64,6 +74,10 @@ export const HeroItems = styled.div`
         cursor: pointer;
         color: #000;
     }
+
+    @media screen and (max-width: 650px){
+      width:100vw;
+  }
  `
 
  export const HeroMenuHeading = styled.div`
@@ -77,7 +91,13 @@ export const HeroItems = styled.div`
  text-decoration:none;
  text-align: center;
  align-item:center;
- margin-top:15px
+ margin-top:15px;
+
+
+ @media screen and (max-width: 1372px){
+  opacity: 0;
+}
+ 
  `
 
  export const HeroMenuSign = styled.img`
@@ -94,6 +114,11 @@ export const HeroItems = styled.div`
   &:hover{
     transform: scale(1.2);
   }
+  @media screen and (max-width: 1372px){
+    opacity: 0;
+}
+
+  
 
  `
  export const HeroMenuContainer = styled.div`
@@ -108,5 +133,73 @@ export const HeroItems = styled.div`
   top: 5rem;
   right:2rem;
   border-radius:2px
+
+  
  `
+
+ export const HeroHoursContainer = styled.div`
+ justify-content:center;
+ margin-top:10vh;
+ width:33.9vw;
+ height:30vh;
+ border: solid 5px;
+ border-color: red;
+ background: #fffdd0;
+`
+
+export const HeroHoursHeader = styled.h1`
+justify-content:center;
+text-align: center;
+color:red;
+
+
+
+@media screen and (max-width: 1440px){
+  font-size:21px;
+},
+@media screen and (max-width: 1325px){
+  font-size:20px;
+},
+@media screen and (max-width: 650px){
+  font-size:15px;
+}
+
+`
+export const HeroHoursHeader2 = styled.h1`
+justify-content:center;
+text-align: center;
+color:red;
+margin-top:5px;
+
+
+@media screen and (max-width: 1440px){
+  font-size:21px;
+  margin-top:10px;
+},
+@media screen and (max-width: 1325px){
+  font-size:20px;
+},
+@media screen and (max-width: 650px){
+  font-size:15px;
+}
+
+`
+
+export const HeroHoursDesc = styled.h2`
+justify-content: center;
+text-align:center;
+padding-top: 10px;
+color: black;
+
+@media screen and (max-width: 1940px){
+  font-size:22px;
+},
+@media screen and (max-width: 1325px){
+  font-size:20px;
+},
+@media screen and (max-width: 650px){
+  font-size:15px;
+}
+
+`
 

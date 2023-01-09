@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Navbar from '../Navbar'
 import Sidebar from '../Sidebar'
-import { HeroContainer, HeroContent, HeroH1, HeroItems, HeroP, HeroBtn, HeroMenuSign, HeroMenuContainer, HeroMenuHeading} from './HeroElements';
+import { HeroContainer, HeroContent, HeroH1, HeroItems, HeroP, HeroBtn, HeroMenuSign, HeroMenuContainer, HeroMenuHeading, HeroHoursContainer, HeroHoursHeader,HeroHoursHeader2,HeroHoursDesc, } from './HeroElements';
 
 
 const Hero = ({data}) => {
@@ -17,8 +17,12 @@ const Hero = ({data}) => {
         <HeroContent>
             <HeroItems>
                 <HeroH1>Dock street Coffee Shop</HeroH1>
-                <HeroP>Ready in 2 minutes</HeroP>
-                <HeroBtn>Full Menu</HeroBtn>
+                <HeroP>Keep It Simple</HeroP>
+                <HeroBtn>FULL MENU</HeroBtn>
+                <HeroHoursContainer>
+                  <HeroHoursHeader>Hours:</HeroHoursHeader>
+                  <HeroHoursDesc>Open 7 days a week <br/>6:30am - 1:30pm <br/><HeroHoursHeader2>Address:</HeroHoursHeader2>2 Dock Street, Edgartown<br/>TEL : (508) 627-5232 </HeroHoursDesc>
+                </HeroHoursContainer>
                 <HeroMenuContainer>
                 <HeroMenuHeading >Specials</HeroMenuHeading>
                 <HeroMenuSign src={data.map((element,index)=>{

@@ -10,8 +10,8 @@ export const productData = [
     {
         img: breakfast1,
         alt: 'Breakfast',
-        name: 'Bacon Mac',
-        desc: 'Bacon, egg and cheese on english muffin',
+        name: 'Breakfast Sandwich',
+        desc: 'Your choice of meat, egg and cheese on english muffin',
         price: '$7.99',
         button: 'Add to cart'
     },

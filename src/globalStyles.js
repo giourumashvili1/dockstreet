@@ -7,5 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Kanit', sans-serif;
     scroll-behavior: smooth;
 
+
+
    }
 `

@@ -18,11 +18,7 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     cursor: pointer;
 
-    @media screen and (max-width: 400px) {
-        position:absolute;
-        top: 10px;
-        left: 25px;
-    }
+
 `
 
 export const NavIcon = styled.div`
@@ -43,7 +39,14 @@ export const NavIcon = styled.div`
     p{
         transform: translate(-175%, 100%);
         font-size: 28px;
+       
     }
+
+    @media screen and (max-width: 650px){
+            right:-5rem;
+            margin-top:-1.5rem;
+        }
+    
 `
 
 export const Bars = styled(MdFreeBreakfast)`
@@ -52,4 +55,6 @@ export const Bars = styled(MdFreeBreakfast)`
     margin-left: -35%;
     transform: translate(-50%, 15%);
     `
+
+
 

@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Hero from "./components/Hero";
 import { productData, productDataTwo } from "./components/Products/data";
@@ -14,7 +14,7 @@ import { imageData } from "./components/Hero/data";
 
 
 function App() {
-  const data = productData;
+
   return (
     <Router>
       <GlobalStyle />

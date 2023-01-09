@@ -16,7 +16,7 @@ export default function Card(props) {
   return (
     <CardWrapper>
 
-    <MDBCard>
+    <MDBCard className='card'>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage className='card--image' src={props.img} fluid alt='...' />
         <a>
@@ -26,7 +26,8 @@ export default function Card(props) {
       <MDBCardBody>
         <MDBCardTitle className='card--title'>{props.title}</MDBCardTitle>
         <MDBCardText className='card--description'>
-        {props.desc}
+        {props.desc}<br/>
+        {props.price}
         </MDBCardText>
         <MDBBtn className='card--button' href=''>Add To Cart<MdAddShoppingCart className='card--description--icon' size={30}/></MDBBtn>
       </MDBCardBody>

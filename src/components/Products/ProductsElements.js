@@ -6,6 +6,11 @@ export const ProductsContainer = styled.div`
     padding: 5rem calc ((100vw - 1300px) /2);
     background: #fff;
     color:#000;
+    @media screen and (max-width: 450px){
+      width: 100%;
+      
+      
+    }
 `
 
 export const ProductWrapper = styled.div`
@@ -13,6 +18,14 @@ export const ProductWrapper = styled.div`
  flex-wrap: wrap;
  justify-content: center;
  margin: 0 auto;
+
+ @media screen and (max-width: 650px){
+justify-content:center;
+align-items:center;
+gap: 5rem;
+  
+  
+}
  `
 
  export const ProductCard = styled.div`
@@ -78,4 +91,6 @@ export const ProductWrapper = styled.div`
  height:30vh;
  width:20vw;
  margin-left: 50px;
+
+ 
  `

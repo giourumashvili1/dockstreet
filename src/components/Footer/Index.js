@@ -20,7 +20,7 @@ const Footer = () => {
                         <SocialIconLink href='/' target="_blank" aria-label="Facebook" rel="noopener noreferrer">
                             <FaFacebook/>
                         </SocialIconLink>
-                        <SocialIconLink href='/' target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                        <SocialIconLink href='https://www.instagram.com/dockstreetmv/?hl=en' target="_blank" aria-label="Instagram" rel="noopener noreferrer">
                             <FaInstagram/>
                         </SocialIconLink>
                         <SocialIconLink href='/' target="_blank" aria-label="Twitter" rel="noopener noreferrer">

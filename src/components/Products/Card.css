@@ -1,3 +1,18 @@
+.card{
+
+    }
+    @media screen and (max-width: 1050px){
+        .card{
+            right:4rem;
+            width: 40vw;
+            height:50vh;
+            margin-top: -5vh;
+        
+        }
+        .card--button{
+            padding-top: 0px;
+        }
+    }
 .card--title{
     text-align: center;
     color:red;
@@ -15,6 +30,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 15px;
+
 
 }
 .card--button:hover{

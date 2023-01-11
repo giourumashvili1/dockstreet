@@ -1,0 +1,20 @@
+.BacktoTopButton{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 100px;
+    width: 50px;
+    font-size: 40px;
+    background-color: transparent;
+    color:black;
+    border-color:transparent;
+    border-radius: 100%;
+    animation: bounce .7s infinite alternate;
+
+}
+.BacktoTopButton :hover{
+    color: rgb(50, 49, 49);
+}
+@keyframes bounce {
+    to { transform: scale(1.2);}
+}

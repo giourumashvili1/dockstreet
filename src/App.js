@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import Hero from "./components/Hero";
 import { productData, productDataTwo } from "./components/Products/data";
 import { GlobalStyle } from "./globalStyles";
@@ -8,6 +7,8 @@ import Feature from "./components/Feature";
 import Footer from "./components/Footer/Index";
 import { Element } from "react-scroll";
 import { imageData } from "./components/Hero/data";
+import BacktoTopButton from "./components/Extras/BacktoTopButton";
+
 
 
 
@@ -16,8 +17,8 @@ import { imageData } from "./components/Hero/data";
 function App() {
 
   return (
-    <Router>
-      <GlobalStyle />
+    <div>
+        <GlobalStyle />
       <Hero data={imageData} />
       <Element name="products-breakfast">
         <Products heading='Popular Choices' data={productData} />
@@ -27,7 +28,10 @@ function App() {
         <Products heading='Popular Choices' data={productDataTwo} />
       </Element>
       <Footer />
-    </Router>
+      <BacktoTopButton/>
+    </div>
+        
+
   );
 }
 

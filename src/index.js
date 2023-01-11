@@ -4,10 +4,20 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import MenuPage from './Pages/MenuPage';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <Routes>
+            <Route path='/menu' element={<MenuPage/>}/>
+            <Route path='/' element={<App />}/>
+        </Routes>
+    
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

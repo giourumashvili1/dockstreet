@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";

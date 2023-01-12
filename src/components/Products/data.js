@@ -39,6 +39,38 @@ export const productData = [
         price: '$17.99',
         button: 'Add to cart'
     },
+    {
+        img: breakfast4,
+        alt: 'Breakfast',
+        name: 'Meore',
+        desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
+        price: '$17.99',
+        button: 'Add to cart'
+    },
+    {
+        img: breakfast4,
+        alt: 'Breakfast',
+        name: 'Mesame',
+        desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
+        price: '$17.99',
+        button: 'Add to cart'
+    },
+    {
+        img: breakfast4,
+        alt: 'Breakfast',
+        name: 'Meotxe',
+        desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
+        price: '$17.99',
+        button: 'Add to cart'
+    },
+    {
+        img: breakfast4,
+        alt: 'Breakfast',
+        name: 'Mexute',
+        desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
+        price: '$17.99',
+        button: 'Add to cart'
+    },
 ]
 export const productDataTwo = [
     {
@@ -59,6 +91,38 @@ export const productDataTwo = [
     },
     {
         img: lunch3,
+        alt: 'Lunch',
+        name: 'Tuna Melt',
+        desc: 'Tuna fish on grilled cheese',
+        price: '$7.99',
+        button: 'Add to cart'
+    },
+    {
+        img: lunch1,
+        alt: 'Lunch',
+        name: 'Tuna Melt',
+        desc: 'Tuna fish on grilled cheese',
+        price: '$7.99',
+        button: 'Add to cart'
+    },
+    {
+        img: lunch1,
+        alt: 'Lunch',
+        name: 'Tuna Melt',
+        desc: 'Tuna fish on grilled cheese',
+        price: '$7.99',
+        button: 'Add to cart'
+    },
+    {
+        img: lunch1,
+        alt: 'Lunch',
+        name: 'Tuna Melt',
+        desc: 'Tuna fish on grilled cheese',
+        price: '$7.99',
+        button: 'Add to cart'
+    },
+    {
+        img: lunch1,
         alt: 'Lunch',
         name: 'Tuna Melt',
         desc: 'Tuna fish on grilled cheese',

@@ -11,7 +11,7 @@ function MenuPage(props) {
         <MenuWrapper>
             <Menu>
             <div className="menu">
-      <h2 className="menu__title">Dock Street Coffe Shop</h2>
+      <h2 className="menu__title">Dock Street Coffeè Shop</h2>
       <ul className="menu__items">
         <li className="menu__item">
           <h3 className="menu__item-name">{productData[0].name}</h3>

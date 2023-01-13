@@ -9,7 +9,7 @@ function MenuPage(props) {
     <MenuPageWrapper>
     <MenuContainer>
         <MenuWrapper>
-            <Menu>
+            <Menu onClick={e => e.stopPropagation()}>
             <div className="menu">
       <h2 className="menu__title">Dock Street Coffe Shop</h2>
       <ul className="menu__items">

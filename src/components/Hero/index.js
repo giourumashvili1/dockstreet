@@ -110,9 +110,10 @@ const menuButtonHandler = ()=>{
             </HeroItems>
         </HeroContent>
             {isClicked && (<div className='modal--window'>
-              <div onClick={menuButtonHandler} className='overlay'></div>
+              <div onClick={menuButtonHandler} className='overlay'>
               <MenuPage/>
               <GoBackButton onClick={menuButtonHandler}/>
+              </div>
               </div>
                )}
     </HeroContainer>

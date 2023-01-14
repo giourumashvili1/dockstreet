@@ -1,5 +1,3 @@
-.card {}
-
 @media screen and (max-width: 1050px) {
     .card {
         right: 4rem;
@@ -74,8 +72,6 @@
 .card--description--icon {
     margin-left: 10px;
 }
-
-.arrow-button {}
 
 .slick-slider {
     max-width: 100vw;

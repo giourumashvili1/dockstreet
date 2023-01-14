@@ -58,54 +58,17 @@ const Hero = ({ data }) => {
           </HeroHoursContainer>
           <HeroMenuContainer>
             <HeroMenuHeading >Specials</HeroMenuHeading>
-            <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img1
-              )
-            })} />
-            <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img2
-              )
-            })} />
-            <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img3
-              )
-            })} />
-            <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img4
-              )
-            })} />
-            <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img5
-              )
-            })} />
-            <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img6
-              )
-            })} />
+            <HeroMenuSign src={data[0].img1} />
+            <HeroMenuSign src={data[0].img2} />
+            <HeroMenuSign src={data[0].img3} />
+            <HeroMenuSign src={data[0].img4} />
+            <HeroMenuSign src={data[0].img5} />
+            <HeroMenuSign src={data[0].img6} />
 
-            {isBigScreen && [<HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img7
-              )
-            })} />, <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img8
-              )
-            })} />, <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img9
-              )
-            })} />, <HeroMenuSign src={data.map((element, index) => {
-              return (
-                element.img10
-              )
-            })} />]}
+            {isBigScreen && [<HeroMenuSign src={data[0].img7} />,
+            <HeroMenuSign src={data[0].img8} />,
+            <HeroMenuSign src={data[0].img9} />,
+            <HeroMenuSign src={data[0].img10} />]}
           </HeroMenuContainer>
         </HeroItems>
       </HeroContent>

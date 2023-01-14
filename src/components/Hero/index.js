@@ -54,7 +54,7 @@ const Hero = ({ data }) => {
           <HeroBtn onClick={menuButtonHandler}>FULL MENU</HeroBtn>
           <HeroHoursContainer>
             <HeroHoursHeader>Hours:</HeroHoursHeader>
-            <HeroHoursDesc>Open 7 days a week <br />6:30am - 1:30pm <br /><HeroHoursHeader2>Address:</HeroHoursHeader2>2 Dock Street, Edgartown<br />TEL : (508) 627-5232 </HeroHoursDesc>
+            <HeroHoursDesc>Open 7 days a week <br />6:30am - 1:30pm <br /></HeroHoursDesc><HeroHoursHeader2>Address:</HeroHoursHeader2><HeroHoursDesc>2 Dock Street, Edgartown<br />TEL : (508) 627-5232 </HeroHoursDesc>
           </HeroHoursContainer>
           <HeroMenuContainer>
             <HeroMenuHeading >Specials</HeroMenuHeading>

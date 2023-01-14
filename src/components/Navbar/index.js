@@ -3,16 +3,16 @@ import { Nav, NavIcon, NavLink, Bars, NavImg } from './NavbarElements'
 
 
 
-const Navbar = ({toggle}) => {
+const Navbar = ({ toggle }) => {
   return (
     <>
-        <Nav>
-            {/* <NavLink to='/'>DINER</NavLink> */}
-            <NavIcon onClick={toggle}>
-                <p>Menu</p>
-            <Bars />
-            </NavIcon>
-        </Nav>
+      <Nav>
+        {/* <NavLink to='/'>DINER</NavLink> */}
+        <NavIcon onClick={toggle}>
+          <p>Menu</p>
+          <Bars />
+        </NavIcon>
+      </Nav>
     </>
   )
 }

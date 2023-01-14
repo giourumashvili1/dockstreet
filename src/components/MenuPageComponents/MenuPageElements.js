@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {IoArrowBackCircleSharp} from 'react-icons/io5';
+import { IoArrowBackCircleSharp } from 'react-icons/io5';
 
 export const MenuPageWrapper = styled.div`
 display:flex;

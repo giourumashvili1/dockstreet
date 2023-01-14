@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {FaTimes} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 
 export const SidebarContainer = styled.aside`
@@ -14,7 +14,7 @@ export const SidebarContainer = styled.aside`
     align-items:center;
     top:0;
     transition: 0.3s ease-in-out;
-    right: ${({isOpen})=> (isOpen ? '0' : '-1000px')};
+    right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
 
     @media screen and (max-width: 480px) {
         width: 100%;
@@ -73,7 +73,7 @@ export const SideBtnWrap = styled.div`
     justify-content: center;
 `
 
-export const SidebarRoute = styled( Link )`
+export const SidebarRoute = styled(Link)`
     background: #e31837;
     white-space: nowrap;
     padding: 16px 64px;

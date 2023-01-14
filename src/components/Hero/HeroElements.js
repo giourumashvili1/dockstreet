@@ -44,7 +44,7 @@ export const HeroItems = styled.div`
 
  `
 
- export const HeroH1 = styled.h1`
+export const HeroH1 = styled.h1`
     font-size: clamp(2.5rem, 10vw, 5rem);
     margin-bottom: 1rem;
     box-shadow: 3px 5px red;
@@ -54,13 +54,13 @@ export const HeroItems = styled.div`
   }
  `
 
- export const HeroP = styled.p`
+export const HeroP = styled.p`
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-bottom: 2rem;
     
  `
 
- export const HeroBtn = styled.button`
+export const HeroBtn = styled.button`
     font-size: 1.4rem;
     padding: 1rem 4rem;
     border: none;
@@ -80,7 +80,7 @@ export const HeroItems = styled.div`
   }
  `
 
- export const HeroMenuHeading = styled.div`
+export const HeroMenuHeading = styled.div`
  height: 35px;
  width: 50vw;
  background: black;
@@ -100,7 +100,7 @@ export const HeroItems = styled.div`
  
  `
 
- export const HeroMenuSign = styled.img`
+export const HeroMenuSign = styled.img`
   height: 210px;
   width: 150px
   margin-top: -20px;
@@ -121,7 +121,7 @@ export const HeroItems = styled.div`
   
 
  `
- export const HeroMenuContainer = styled.div`
+export const HeroMenuContainer = styled.div`
  display:flex;
  flex-wrap: wrap;
  justify-content: left;
@@ -137,7 +137,7 @@ export const HeroItems = styled.div`
   
  `
 
- export const HeroHoursContainer = styled.div`
+export const HeroHoursContainer = styled.div`
  justify-content:center;
  margin-top:10vh;
  width:33.9vw;

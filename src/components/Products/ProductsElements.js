@@ -28,13 +28,13 @@ gap: 5rem;
 }
  `
 
- export const ProductCard = styled.div`
+export const ProductCard = styled.div`
   margin:0 2rem;
   line-height:2;
   width: 300px;
  `
 
- export const ProductImg = styled.img`
+export const ProductImg = styled.img`
   height: 300px;
   min-width: 300px;
   max-width: 100%;
@@ -42,19 +42,19 @@ gap: 5rem;
   border-radius: 5px;
  `
 
- export const ProductsHeading = styled.h1`
+export const ProductsHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
  `
 
- export const ProductTitle = styled.h2`
+export const ProductTitle = styled.h2`
   font-weight: 400;
   font-size: 1.5;
   color: red;
  `
 
- export const ProductInfo = styled.div`
+export const ProductInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,16 +63,16 @@ gap: 5rem;
   text-align: center;
  `
 
- export const ProductDesc = styled.p`
+export const ProductDesc = styled.p`
   margin-bottom: 1rem;
  `
 
- export const ProductPrice = styled.p`
+export const ProductPrice = styled.p`
   margin-bottom: 1rem;
   font-size: 2rem;
  `
 
- export const ProductButton = styled.button`
+export const ProductButton = styled.button`
   font-size: 1rem;
   padding: 1rem 4rem;
   border: none;
@@ -87,7 +87,7 @@ gap: 5rem;
     color:#000;
   }
  `
- export const CardWrapper = styled.div`
+export const CardWrapper = styled.div`
 //  height:30vh; // es kleoba ushlida :D
  width:20vw;
  margin-left: 50px;

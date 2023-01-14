@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {NavLink as Link} from 'react-router-dom';
-import { MdFreeBreakfast} from 'react-icons/md';
+import { NavLink as Link } from 'react-router-dom';
+import { MdFreeBreakfast } from 'react-icons/md';
 
 export const Nav = styled.nav`
     background: transparent;

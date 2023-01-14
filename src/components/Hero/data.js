@@ -12,16 +12,16 @@ import numberTen from '../../images/გიოს რისტარანი/sli
 
 export const imageData = [
     {
-        img1:numeberOne,
-        img2:numberTwo,
-        img3:numberThree,
-        img4:numberFour,
-        img5:numberFive,
-        img6:numberSix,
-        img7:numberSeven,
-        img8:numberEight,
-        img9:numberNine,
-        img10:numberTen,
+        img1: numeberOne,
+        img2: numberTwo,
+        img3: numberThree,
+        img4: numberFour,
+        img5: numberFive,
+        img6: numberSix,
+        img7: numberSeven,
+        img8: numberEight,
+        img9: numberNine,
+        img10: numberTen,
         alt: 'Logo'
     }
 ]

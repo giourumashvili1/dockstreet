@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-        <GlobalStyle />
+      <GlobalStyle />
       <Hero data={imageData} />
       <Element name="products-breakfast">
         <Products heading='Popular Choices' data={productData} />
@@ -28,9 +28,9 @@ function App() {
         <Products heading='Popular Choices' data={productDataTwo} />
       </Element>
       <Footer />
-      <BacktoTopButton/>
+      <BacktoTopButton />
     </div>
-        
+
 
   );
 }

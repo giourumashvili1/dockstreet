@@ -86,7 +86,8 @@
     color: black;
 }
 
-.slick-next, .slick-prev {
+.slick-next,
+.slick-prev {
     color: black;
     background: black;
 }

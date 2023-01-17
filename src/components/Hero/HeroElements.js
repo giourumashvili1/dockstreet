@@ -94,6 +94,7 @@ export const HeroMenuHeading = styled.div`
  margin-top:15px;
 
 
+
  @media screen and (max-width: 1372px){
   opacity: 0;
 }

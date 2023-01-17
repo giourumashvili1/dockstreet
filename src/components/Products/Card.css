@@ -78,14 +78,14 @@
     width: 100%;
 }
 
-.slick-prev {
-    color: black;
-}
+
 
 .slick-next,
 .slick-prev {
     color: black;
     background: black;
+    width: 4vw !important;
+    height: 4vh !important;
 }
 
 .slick-prev {
@@ -94,4 +94,14 @@
 
 .slick-next {
     right: 0;
+}
+.nextArrow{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.prevArrow{
+    position: absolute;
+    left: 0;
+    top:50%;
 }

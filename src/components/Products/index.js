@@ -1,7 +1,5 @@
 import React from 'react';
 import Card from './Card';
-import { useState } from 'react';
-import { useRef } from 'react';
 import {
   ProductsContainer,
   ProductsHeading,
@@ -9,13 +7,12 @@ import {
 } from './ProductsElements';
 import Slider from "react-slick";
 import './Card.css';
-import { ClassNames } from '@emotion/react';
 import MyCustomArrow from './MyCustomArrow';
 
 
 
 var sliderSettings = {
-  initialSlide:0,
+  initialSlide: 0,
   dots: true,
   infinite: true,
   speed: 500,
@@ -59,24 +56,11 @@ var sliderSettings = {
 
 const Products = ({ heading, data }) => {
 
-const [currentSlide, setCurrentSlide] = useState(0);
-
-const onClickHandler = (id,e) => {
-
-    if(!sliderRef || !sliderRef.current) return;
-    if (id === "prev") {
-        sliderRef.current.slickPrev();
-    } else {
-        sliderRef.current.slickNext();
-    }
-};
-const sliderRef = useRef(null);
-
   return (
     <ProductsContainer >
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductWrapper>
-        <Slider ref={sliderRef} {...sliderSettings}>
+        <Slider {...sliderSettings}>
           {data.map((product, index) => {
             return (
 

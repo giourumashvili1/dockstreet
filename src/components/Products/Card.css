@@ -78,30 +78,15 @@
     width: 100%;
 }
 
-
-
-.slick-next,
-.slick-prev {
-    color: black;
-    background: black;
-    width: 4vw !important;
-    height: 4vh !important;
-}
-
-.slick-prev {
-    left: 0;
-}
-
-.slick-next {
-    right: 0;
-}
 .nextArrow{
     position: absolute;
     right: 0;
     top: 50%;
+    z-index: 9999;
 }
 .prevArrow{
     position: absolute;
     left: 0;
     top:50%;
+    z-index: 9999;
 }

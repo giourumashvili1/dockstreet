@@ -7,7 +7,7 @@ function MyCustomArrow({id,onClick}) {
    
   return (
     <div className='customArrow' >
-    {id === 'prev' ? <button className='prevArrow' onClick={(e) => onClick(id,e)}> Prev </button> : <button className='nextArrow' onClick={(e) => onClick(id,e)}> Next</button>}
+    {id === 'prev' ? <button className='prevArrow' onClick={onClick}> Prev </button> : <button className='nextArrow' onClick={onClick}> Next</button>}
   </div>
   )
 }

@@ -25,6 +25,8 @@ var sliderSettings = {
   autoplaySpeed: 3000,
   cssEase: "linear",
   pauseOnHover: true,
+  nextArrow: <MyCustomArrow id="next" />,
+  prevArrow: <MyCustomArrow id="prev" />,
   responsive: [
     {
       breakpoint: 1024,
@@ -60,7 +62,7 @@ const Products = ({ heading, data }) => {
 const [currentSlide, setCurrentSlide] = useState(0);
 
 const onClickHandler = (id,e) => {
-    e.preventDefault();
+
     if(!sliderRef || !sliderRef.current) return;
     if (id === "prev") {
         sliderRef.current.slickPrev();
@@ -74,7 +76,7 @@ const sliderRef = useRef(null);
     <ProductsContainer >
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductWrapper>
-        <Slider ref={sliderRef} {...sliderSettings} nextArrow={<MyCustomArrow id='next'  onClick={onClickHandler}/>} prevArrow ={<MyCustomArrow id='prev' onClick={onClickHandler} />}>
+        <Slider ref={sliderRef} {...sliderSettings}>
           {data.map((product, index) => {
             return (
 

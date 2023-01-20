@@ -83,10 +83,29 @@
     right: 0;
     top: 50%;
     z-index: 9999;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: rgb(255, 106, 0);
+    font-size: 2vw;
+    border-color: transparent;
+    text-align: center;
+    justify-content: center;
+    color: white;
 }
 .prevArrow{
     position: absolute;
-    left: 0;
+    left: 0.5vw;
     top:50%;
     z-index: 9999;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: rgb(255, 106, 0);
+    font-size: 2vw;
+    border-color: transparent;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
 }

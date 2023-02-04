@@ -28,7 +28,7 @@ export default function Card(props) {
             {props.desc}<br />
             {props.price}
           </MDBCardText>
-          <MDBBtn className='card--button' href=''>Add To Cart<MdAddShoppingCart className='card--description--icon' size={30} /></MDBBtn>
+          {/* <MDBBtn className='card--button' href=''>Add To Cart<MdAddShoppingCart className='card--description--icon' size={30} /></MDBBtn> */}
         </MDBCardBody>
       </MDBCard>
     </CardWrapper>

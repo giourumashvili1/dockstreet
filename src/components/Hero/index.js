@@ -42,6 +42,24 @@ const Hero = ({ data }) => {
       document.body.classList.remove('active-modal')
     }
   }
+  const [backToTopButton, setBackToTopButton] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                setBackToTopButton(true)
+            } else {
+                setBackToTopButton(false)
+            }
+        })
+    }, [])
+
+    const scrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
   return (
 
     <HeroContainer >
@@ -51,7 +69,10 @@ const Hero = ({ data }) => {
         <HeroItems>
           <HeroH1>Dock street Coffee Shop</HeroH1>
           <HeroP>Keep It Simple</HeroP>
-          <HeroBtn onClick={menuButtonHandler}>FULL MENU</HeroBtn>
+          <HeroBtn onClick={()=>{
+            scrollUp();
+            menuButtonHandler();
+          }}>FULL MENU</HeroBtn>
           <HeroHoursContainer>
             <HeroHoursHeader>Hours:</HeroHoursHeader>
             <HeroHoursDesc>Open 7 days a week <br />6:30am - 1:30pm <br /></HeroHoursDesc><HeroHoursHeader2>Address:</HeroHoursHeader2><HeroHoursDesc>2 Dock Street, Edgartown<br />TEL : (508) 627-5232 </HeroHoursDesc>

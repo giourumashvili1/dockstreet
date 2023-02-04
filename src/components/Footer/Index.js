@@ -10,12 +10,19 @@ import {
     SocialIconLink
 } from './FooterElements';
 const Footer = () => {
+
+    const scrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
     return (
         <FooterContainer>
             <FooterWrap>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/'>Dockstreet</SocialLogo>
+                        <SocialLogo onClick={scrollUp} to='/'>Dockstreet</SocialLogo>
                         <SocialIcons>
                             <SocialIconLink href='/' target="_blank" aria-label="Facebook" rel="noopener noreferrer">
                                 <FaFacebook />

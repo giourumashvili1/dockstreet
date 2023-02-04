@@ -2,9 +2,12 @@ import breakfast1 from '../../images/breakfast1.png'
 import breakfast2 from '../../images/breakfast2.jpeg'
 import breakfast3 from '../../images/breakfast3.jpeg'
 import breakfast4 from '../../images/breakfast4.jpeg'
+import breakfast5 from '../../images/pancakes.jpeg'
+import breakfast6 from '../../images/corned-beef.jpeg'
 import lunch1 from '../../images/cheesburger.jpeg'
 import lunch2 from '../../images/tuna-melt.jpeg'
 import lunch3 from '../../images/blt.jpeg'
+import lunch4 from '../../images/grilled-cheese.jpeg'
 
 export const productData = [
     {
@@ -40,23 +43,23 @@ export const productData = [
         button: 'Add to cart'
     },
     {
-        img: breakfast4,
+        img: breakfast5,
         alt: 'Breakfast',
-        name: 'Meore',
-        desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
+        name: 'Pancakes',
+        desc: 'Stack of 3 pancakes with blueberrys, chocolate chips or plain',
         price: '$17.99',
         button: 'Add to cart'
     },
     {
-        img: breakfast4,
+        img: breakfast6,
         alt: 'Breakfast',
-        name: 'Mesame',
-        desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
+        name: 'Corned Beef Hash',
+        desc: '2 Eggs with corned beef hash, homefries and a toast',
         price: '$17.99',
         button: 'Add to cart'
     },
     {
-        img: breakfast4,
+        img: breakfast1,
         alt: 'Breakfast',
         name: 'Meotxe',
         desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
@@ -64,7 +67,7 @@ export const productData = [
         button: 'Add to cart'
     },
     {
-        img: breakfast4,
+        img: breakfast2,
         alt: 'Breakfast',
         name: 'Mexute',
         desc: '8oz Sirloin Stake done by your choice with 2 Eggs',
@@ -92,45 +95,45 @@ export const productDataTwo = [
     {
         img: lunch3,
         alt: 'Lunch',
-        name: 'Tuna Melt',
-        desc: 'Tuna fish on grilled cheese',
+        name: 'BLT',
+        desc: 'Bacon,Lettuce,Tomato,Mayo',
+        price: '$7.99',
+        button: 'Add to cart'
+    },
+    {
+        img: lunch4,
+        alt: 'Lunch',
+        name: 'Grilled Cheese',
+        desc: 'Classic grilled cheese on white toast',
         price: '$7.99',
         button: 'Add to cart'
     },
     {
         img: lunch1,
         alt: 'Lunch',
-        name: 'Tuna Melt',
-        desc: 'Tuna fish on grilled cheese',
-        price: '$7.99',
+        name: 'Cheesburger',
+        desc: 'Classic, California, Deluxe',
+        price: '$8.99',
         button: 'Add to cart'
     },
     {
         img: lunch1,
         alt: 'Lunch',
-        name: 'Tuna Melt',
-        desc: 'Tuna fish on grilled cheese',
-        price: '$7.99',
+        name: 'Cheesburger',
+        desc: 'Classic, California, Deluxe',
+        price: '$8.99',
         button: 'Add to cart'
     },
     {
-        img: lunch1,
+        img: lunch4,
         alt: 'Lunch',
-        name: 'Tuna Melt',
-        desc: 'Tuna fish on grilled cheese',
+        name: 'Grilled Cheese',
+        desc: 'Classic grilled cheese on white toast',
         price: '$7.99',
         button: 'Add to cart'
     },
     {
-        img: lunch1,
-        alt: 'Lunch',
-        name: 'Tuna Melt',
-        desc: 'Tuna fish on grilled cheese',
-        price: '$7.99',
-        button: 'Add to cart'
-    },
-    {
-        img: lunch1,
+        img: lunch2,
         alt: 'Lunch',
         name: 'Tuna Melt',
         desc: 'Tuna fish on grilled cheese',

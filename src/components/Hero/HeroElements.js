@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import ImgBg from '../../images/background.jpeg';
+import ImgBg from '../../images/grill-background.webp';
 
 export const HeroContainer = styled.div`
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(${ImgBg});
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${ImgBg});
+    // background: url(${ImgBg});
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -47,6 +48,7 @@ export const HeroItems = styled.div`
 export const HeroH1 = styled.h1`
     font-size: clamp(2.5rem, 10vw, 5rem);
     margin-bottom: 1rem;
+    color:white;
     box-shadow: 3px 5px red;
     letter-spacing: 3px;
     @media screen and (max-width: 650px){
@@ -57,7 +59,7 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-bottom: 2rem;
-    
+    color:white;
  `
 
 export const HeroBtn = styled.button`
@@ -95,6 +97,7 @@ export const HeroMenuHeading = styled.div`
 
 
 
+
  @media screen and (max-width: 1372px){
   opacity: 0;
 }
@@ -106,10 +109,17 @@ export const HeroMenuSign = styled.img`
   width: 150px
   margin-top: -20px;
   margin-left: 3%;
-  background:rgba(255, 0, 0, 0.5);
+  // background:rgba(255, 0, 0, 0.5);
+  // background: radial-gradient(circle, rgba(252, 250, 250, 0.478) 0%, rgb(226, 24, 54, 0.7) 70% );
+  background:#e31836d9;
+
+
+
+
   border-radius:5px;
   border:solid 5px;
   border-color: black;
+
   transition: 0.3s ease-out;
   cursor: pointer;
   &:hover{
@@ -143,9 +153,10 @@ export const HeroHoursContainer = styled.div`
  margin-top:10vh;
  width:33.9vw;
  height:30vh;
- border: solid 5px;
- border-color: red;
- background: #fffdd0;
+//  border: solid 5px;
+//  border-color: red;
+//  background: #fffdd0; 
+background: transparent;
 
 @media screen and (max-width: 480px){
   width:60vw;
@@ -160,8 +171,9 @@ color:red;
 
 
 
+
 @media screen and (max-width: 1440px){
-  font-size:21px;
+  font-size:25px;
 },
 @media screen and (max-width: 1325px){
   font-size:20px;
@@ -179,7 +191,7 @@ margin-top:5px;
 
 
 @media screen and (max-width: 1440px){
-  font-size:21px;
+  font-size:25px;
   margin-top:10px;
 },
 @media screen and (max-width: 1325px){
@@ -195,7 +207,7 @@ export const HeroHoursDesc = styled.h2`
 justify-content: center;
 text-align:center;
 padding-top: 10px;
-color: black;
+color: white;
 
 @media screen and (max-width: 1940px){
   font-size:22px;

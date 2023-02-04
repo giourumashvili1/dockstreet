@@ -21,11 +21,11 @@ function App() {
       <GlobalStyle />
       <Hero data={imageData} />
       <Element name="products-breakfast">
-        <Products heading='Popular Choices' data={productData} />
+        <Products heading='Popular Breakfast Choices' data={productData} />
       </Element>
       <Feature />
       <Element name="products-lunch">
-        <Products heading='Popular Choices' data={productDataTwo} />
+        <Products heading='Popular Lunch Choices' data={productDataTwo} />
       </Element>
       <Footer />
       <BacktoTopButton />

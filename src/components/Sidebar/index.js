@@ -1,8 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap } from './SidebarElements';
 import { scroller } from 'react-scroll';
+import { GoBackButton } from '../MenuPageComponents/MenuPageElements';
+import ContactComponent from '../ContactComponent/ContactComponent';
+
+import './Sidebar.css'
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const contactButtonHandler = () => {
+    setIsClicked(!isClicked);
+
+    if (!isClicked) {
+      document.body.classList.add('active-modal')
+    } else {
+      document.body.classList.remove('active-modal')
+    }
+  }
 
   const scrollTo = (target) => {
     scroller.scrollTo(target, {
@@ -13,6 +28,8 @@ const Sidebar = ({ isOpen, toggle }) => {
   }
 
   return (
+    <div>
+
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon>
         <CloseIcon />
@@ -21,11 +38,25 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarLink to='#' onClick={() => scrollTo("products-breakfast")}>Breakfast</SidebarLink>
         <SidebarLink to='#' onClick={() => scrollTo('products-lunch')}>Lunch</SidebarLink>
         <SidebarLink to='/menu'>Full Menu</SidebarLink>
+        <SidebarLink to='#'>Gallery</SidebarLink>
+        <br/>
+        <SidebarLink to='#' >About</SidebarLink>
       </SidebarMenu>
       <SideBtnWrap>
-        <SidebarRoute to='/'>Order Now</SidebarRoute>
+        <SidebarRoute onClick={contactButtonHandler} to='/'>CONTACT US</SidebarRoute>
       </SideBtnWrap>
     </SidebarContainer>
+
+    {isClicked && (<div className='modal--window'>
+        <div onClick={contactButtonHandler} className='overlay'>
+          <ContactComponent />
+        </div>
+      </div>
+      )}
+
+    
+    </div>
+
   )
 }
 

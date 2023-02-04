@@ -5,8 +5,8 @@ const Feature = () => {
   return (
     <FeatureContainer>
       <h1>Breakfast Special </h1>
-      <p>Two Eggs over easy, bacon, french toasts, home fries</p>
-      <FeatureButton>Order Now</FeatureButton>
+      <p>Two Eggs, bacon, french toasts, home fries</p>
+      {/* <FeatureButton>Order Now</FeatureButton> */}
     </FeatureContainer>
   )
 }

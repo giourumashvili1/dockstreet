@@ -12,6 +12,7 @@ bottom: 0;
 position: fixed;
 background: rgba(49,49,49,0.8);
 
+
 `
 
 export const GoBackButton = styled(IoArrowBackCircleSharp)`
@@ -50,5 +51,9 @@ height:100vh;
 width:50%;
 border: solid 5px;
 border-color: red;
-background: #fffdd0;
+// background: #fffdd0;
+background: rgba(0, 0, 0, 0.755);
+
+overflow-y:scroll;
+
 `

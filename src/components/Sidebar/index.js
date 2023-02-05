@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap } from './SidebarElements';
 import { scroller } from 'react-scroll';
 import { GoBackButton } from '../MenuPageComponents/MenuPageElements';
@@ -19,6 +19,10 @@ const Sidebar = ({ isOpen, toggle }) => {
     }
   }
 
+  document.addEventListener('keyup', (e) => {
+    if (e.key === 'Escape' && isClicked) contactButtonHandler();
+  });
+
   const scrollTo = (target) => {
     scroller.scrollTo(target, {
       duration: 200,
@@ -30,31 +34,31 @@ const Sidebar = ({ isOpen, toggle }) => {
   return (
     <div>
 
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon>
-        <CloseIcon />
-      </Icon>
-      <SidebarMenu>
-        <SidebarLink to='#' onClick={() => scrollTo("products-breakfast")}>Breakfast</SidebarLink>
-        <SidebarLink to='#' onClick={() => scrollTo('products-lunch')}>Lunch</SidebarLink>
-        <SidebarLink to='/menu'>Full Menu</SidebarLink>
-        <SidebarLink to='#'>Gallery</SidebarLink>
-        <br/>
-        <SidebarLink to='#' >About</SidebarLink>
-      </SidebarMenu>
-      <SideBtnWrap>
-        <SidebarRoute onClick={contactButtonHandler} to='/'>CONTACT US</SidebarRoute>
-      </SideBtnWrap>
-    </SidebarContainer>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon>
+          <CloseIcon />
+        </Icon>
+        <SidebarMenu>
+          <SidebarLink to='#' onClick={() => scrollTo("products-breakfast")}>Breakfast</SidebarLink>
+          <SidebarLink to='#' onClick={() => scrollTo('products-lunch')}>Lunch</SidebarLink>
+          <SidebarLink to='/menu'>Full Menu</SidebarLink>
+          <SidebarLink to='#'>Gallery</SidebarLink>
+          <br />
+          <SidebarLink to='#' >About</SidebarLink>
+        </SidebarMenu>
+        <SideBtnWrap>
+          <SidebarRoute onClick={contactButtonHandler} to='/'>CONTACT US</SidebarRoute>
+        </SideBtnWrap>
+      </SidebarContainer>
 
-    {isClicked && (<div className='modal--window'>
+      {isClicked && (<div className='modal--window'>
         <div onClick={contactButtonHandler} className='overlay'>
-          <ContactComponent />
+          <ContactComponent onClick={contactButtonHandler} />
         </div>
       </div>
       )}
 
-    
+
     </div>
 
   )

@@ -42,6 +42,11 @@ const Hero = ({ data }) => {
       document.body.classList.remove('active-modal')
     }
   }
+
+  document.addEventListener('keyup', (e) => {
+    if (e.key === 'Escape' && isClicked) menuButtonHandler();
+  });
+
   const [backToTopButton, setBackToTopButton] = useState(false);
 
     useEffect(() => {

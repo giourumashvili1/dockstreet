@@ -13,6 +13,10 @@
 .menu{
  width: 90% !important;
 }
+.menu__title{
+
+  font-size: 1.5rem;
+}
 }
 
 .menu {
@@ -25,7 +29,7 @@
   margin-bottom: 20px;
   margin-top: 2%;
   color: white;
-  font-family: cursive;
+  font-family:'Permanent Marker', cursive;
   font-weight: 800;
 }
 

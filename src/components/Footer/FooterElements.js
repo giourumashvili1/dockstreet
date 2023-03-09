@@ -32,25 +32,43 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: #fff;
+  color: red;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
+  font-family:'Permanent Marker', cursive;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  font-weight: bold;
+
+  &:hover{
+    color:white;
+  }
+
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 60px;
 `;
 
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
 `;
+
+// export const WebsiteDesigner = styled(a)`
+// color: #fff;
+//   justify-self: start;
+//   cursor: pointer;
+//   text-decoration: none;
+//   font-size: 0.7rem;
+//   font-family: 'Aboreto';
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 16px;
+//   font-weight: bold;
+//   `

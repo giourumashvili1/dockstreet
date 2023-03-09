@@ -13,6 +13,9 @@ position: fixed;
 background: rgba(49,49,49,0.8);
 
 
+
+
+
 `
 
 export const GoBackButton = styled(IoArrowBackCircleSharp)`
@@ -20,10 +23,12 @@ font-size: 3vw;
 color:white;
 position:absolute;
 top:0;
-left:0;
+left:20%;
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 480px){
     font-size:10vw;
+    left:2%;
+    top:2%;
 }
 
 &:hover{
@@ -44,6 +49,8 @@ display:flex;
  flex-wrap: wrap;
  justify-content: center;
  margin: 0 auto;
+
+
 `
 
 export const Menu = styled.div`

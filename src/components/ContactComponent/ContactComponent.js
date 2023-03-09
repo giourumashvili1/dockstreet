@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactComponent.css';
+import { GoBackButton } from '../MenuPageComponents/MenuPageElements';
+
 
 const Result = () => {
   return (
@@ -24,16 +26,18 @@ function ContactComponent() {
     showResult(true);
   };
   return (
+    <div>
+    <GoBackButton className='closeButton'/>
     <form ref={form} onClick={e => e.stopPropagation()} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <input placeholder='Name' type="text" name="user_name" />
+      <input placeholder='Email' type="email" name="user_email" />
+      <textarea placeholder='Message' name="message" />
+      <input type="submit" value="SEND" />
       <div>{result ? <Result /> : null}</div>
     </form>
+
+    </div>
+    
   )
 }
 

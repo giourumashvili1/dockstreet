@@ -2,14 +2,22 @@ import styled from "styled-components";
 import ImgBg from '../../images/grill-background.webp';
 
 export const HeroContainer = styled.div`
-    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${ImgBg});
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${ImgBg});
     // background: url(${ImgBg});
     height: 100vh;
     background-position: center;
     background-size: cover;
+
+    
     @media screen and (max-width: 650px){
       width:100vw;
+      height: auto !important;
+      min-height: 100vh !important;
+      background-size:inherit;
+      background-position: center;
+
   }
+
 `
 
 export const HeroContent = styled.div`
@@ -141,6 +149,7 @@ export const HeroMenuContainer = styled.div`
   width:50vw;
 //   background: rgba(255,255,255, 0.2);
   position:absolute;
+
   top: 5rem;
   right:2rem;
   border-radius:2px
@@ -161,6 +170,9 @@ background: transparent;
 @media screen and (max-width: 480px){
   width:60vw;
   height:auto;
+  position:absolute;
+  left:20%;
+  top:50%;
 }
 `
 
@@ -178,8 +190,8 @@ color:red;
 @media screen and (max-width: 1325px){
   font-size:20px;
 },
-@media screen and (max-width: 650px){
-  font-size:15px;
+@media screen and (max-width: 480px){
+  font-size:25px;
 }
 
 `
@@ -197,8 +209,8 @@ margin-top:5px;
 @media screen and (max-width: 1325px){
   font-size:20px;
 },
-@media screen and (max-width: 650px){
-  font-size:15px;
+@media screen and (max-width: 480px){
+  font-size:25px;
 }
 
 `
@@ -215,8 +227,8 @@ color: white;
 @media screen and (max-width: 1325px){
   font-size:20px;
 },
-@media screen and (max-width: 650px){
-  font-size:15px;
+@media screen and (max-width: 480px){
+  font-size:25px;
 }
 
 `

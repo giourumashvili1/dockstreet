@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FeaturePic from '../../images/breakfast-image.jpg';
+import FeaturePic from '../../images/special.jpeg';
 
 export const FeatureContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${FeaturePic}); 

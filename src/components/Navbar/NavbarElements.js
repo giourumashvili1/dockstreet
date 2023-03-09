@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from 'react-router-dom';
-import { MdFreeBreakfast } from 'react-icons/md';
+import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
     background: transparent;
@@ -33,7 +33,7 @@ export const NavIcon = styled.div`
         backgorund: #fff;
         transition: 0.3s ease-out;
         cursor: pointer;
-        color: black;
+        color: white;
     }
 
     p{
@@ -49,11 +49,11 @@ export const NavIcon = styled.div`
     
 `
 
-export const Bars = styled(MdFreeBreakfast)`
+export const Bars = styled(FaBars)`
     font-size: 2rem;
-    margin-top: -30%;
-    margin-left: -35%;
-    transform: translate(100%, 15%);
+    position: fixed !important;
+    top: 5% !important;
+    right: 3% !important;
     `
 
 

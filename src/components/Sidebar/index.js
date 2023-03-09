@@ -41,8 +41,8 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <SidebarLink to='#' onClick={() => scrollTo("products-breakfast")}>Breakfast</SidebarLink>
           <SidebarLink to='#' onClick={() => scrollTo('products-lunch')}>Lunch</SidebarLink>
-          <SidebarLink to='/menu'>Full Menu</SidebarLink>
-          <SidebarLink to='#'>Gallery</SidebarLink>
+          {/* <SidebarLink to='/menu'>Full Menu</SidebarLink> */}
+          <SidebarLink to='/gallery'>Gallery</SidebarLink>
           <br />
           <SidebarLink to='#' >About</SidebarLink>
         </SidebarMenu>

@@ -47,7 +47,7 @@ var sliderSettings = {
       breakpoint: 480,
       settings: {
         focusOnSelect: true,
-        slidesToShow: 2.23,
+        slidesToShow: 2,
         slidesToScroll: 2,
       }
     }

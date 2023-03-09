@@ -43,9 +43,16 @@ export const ProductImg = styled.img`
  `
 
 export const ProductsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
+  font-family:'Shantell Sans', cursive;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+  text-decoration-color:red;
+
+  @media screen and (max-width: 650px){
+    font-family:'Permanent Marker', cursive;
+}
  `
 
 export const ProductTitle = styled.h2`

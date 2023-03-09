@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import MenuPage from './Pages/MenuPage';
+import GalleryPage from './Pages/GalleryPage';
 
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path='/menu' element={<MenuPage />} />
+        <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/' element={<App />} />
       </Routes>
 

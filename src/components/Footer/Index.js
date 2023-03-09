@@ -7,8 +7,10 @@ import {
     SocialMediaWrap,
     SocialLogo,
     SocialIcons,
-    SocialIconLink
+    SocialIconLink,
+    WebsiteDesigner,
 } from './FooterElements';
+import './Footer.css'
 const Footer = () => {
 
     const scrollUp = () => {
@@ -16,25 +18,21 @@ const Footer = () => {
             top: 0,
             behavior: 'smooth'
         })
-    }
+    } 
     return (
         <FooterContainer>
             <FooterWrap>
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo onClick={scrollUp} to='/'>Dockstreet</SocialLogo>
+                        <a href='https://www.facebook.com/ilandtechmv' className='designerTag' target="_blank">2023 All Rights Reserved <br/>Designed by iLand Tech</a>
+                        
                         <SocialIcons>
                             <SocialIconLink href='/' target="_blank" aria-label="Facebook" rel="noopener noreferrer">
                                 <FaFacebook />
                             </SocialIconLink>
                             <SocialIconLink href='https://www.instagram.com/dockstreetmv/?hl=en' target="_blank" aria-label="Instagram" rel="noopener noreferrer">
                                 <FaInstagram />
-                            </SocialIconLink>
-                            <SocialIconLink href='/' target="_blank" aria-label="Twitter" rel="noopener noreferrer">
-                                <FaTwitter />
-                            </SocialIconLink>
-                            <SocialIconLink href='/' target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
-                                <FaLinkedin />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

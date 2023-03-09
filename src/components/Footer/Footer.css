@@ -1,0 +1,12 @@
+.designerTag {
+    color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Aboreto';
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+}

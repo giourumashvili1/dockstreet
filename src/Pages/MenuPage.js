@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MenuContainer, MenuWrapper, Menu, MenuPageWrapper } from '../components/MenuPageComponents/MenuPageElements';
 import './Menu.css';
-import { productData, productDataThree, productDataTwo } from "../components/Products/data";
+import {  productDataBreakfast, productDataDrinks, productDataLunch1, productDataLunch2, productDataSides, productDataTwo } from "../components/Products/data";
 
 function MenuPage(props) {
   const [activeSection, setActiveSection] = useState('breakfast');
@@ -17,26 +17,47 @@ function MenuPage(props) {
         <a className='breakfastMenuButton' onClick={() => setActiveSection('breakfast')}>Breakfast</a>
         <a className='lunchMenuButton' onClick={() => setActiveSection('lunch')}>Lunch</a>
         <a className='drinksMenuButton' onClick={() => setActiveSection('drinks')}>Drinks</a>
+        <a className='drinksMenuButton' onClick={() => setActiveSection('sides')}>Sides</a>
       </nav>
       <ul className="menu__items">
-        {activeSection === 'breakfast' && productData.map(item => (
+        {activeSection === 'breakfast' && productDataBreakfast.map(item => (
           <li className="menu__item" key={item.name}>
             <h3 className="menu__item-name">{item.name}</h3>
             <p className="menu__item-description">{item.desc}</p>
             <span className="menu__item-price">{item.price}</span>
           </li>
         ))}
-        {activeSection === 'lunch' && productDataTwo.map(item => (
-          <li className="menu__item" key={item.name}>
+        {activeSection === 'lunch' && (
+          <div className='lunchNavbar'>
+            <a className='sandwichesButton' onClick={() => setActiveSection('sandwiches')}>🥪 Sandwiches</a>
+            <a className='subsButton' onClick={() => setActiveSection('subs')}>🥖 Subs</a>
+          </div>
+        )}
+             {activeSection === 'sandwiches' && productDataLunch1.map(item => (
+           <li className="menu__item" key={item.name}>
             <h3 className="menu__item-name">{item.name}</h3>
             <p className="menu__item-description">{item.desc}</p>
             <span className="menu__item-price">{item.price}</span>
           </li>
-        ))}
-        {activeSection === 'drinks' && productDataThree.map(item => (
-          <li className="menu__item" key={item.name}>
+          
+            ))}
+             {activeSection === 'subs' && productDataLunch2.map(item => (
+           <li className="menu__item" key={item.name}>
             <h3 className="menu__item-name">{item.name}</h3>
             <p className="menu__item-description">{item.desc}</p>
+            <span className="menu__item-price">{item.price}</span>
+          </li>
+          
+            ))}
+        {activeSection === 'drinks' && productDataDrinks.map(item => (
+          <li className="menu__item" key={item.name}>
+            <h3 className="menu__item-name">{item.name}</h3>
+            <span className="menu__item-price">{item.price}</span>
+          </li>
+        ))}
+        {activeSection === 'sides' && productDataSides.map(item => (
+          <li className="menu__item" key={item.name}>
+            <h3 className="menu__item-name">{item.name}</h3>
             <span className="menu__item-price">{item.price}</span>
           </li>
         ))}

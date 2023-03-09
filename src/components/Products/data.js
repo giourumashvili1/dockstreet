@@ -144,7 +144,216 @@ export const productDataTwo = [
     },
 ]
 
-export const productDataThree = [
+export const productDataBreakfast = [
+    {
+        alt: 'breakfast',
+        name: '1 EGG W/ Toast',
+        desc: 'Breakfast Sandwich',
+        price: '$4.95',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: '1 EGG W/ Toast + Bacon/Sausage/Linguica/Ham',
+        desc: 'Breakfast Sandwich',
+        price: '$9.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: '2 EGGS W/ Toast',
+        desc: 'Breakfast Sandwich',
+        price: '$6.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: '2 EGGS W/ Toast + Bacon/Sausage/Linguica/Ham',
+        desc: 'Breakfast Sandwich',
+        price: '$10.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: 'French Toast',
+        desc: '3 Slices of toast of your choice',
+        price: '$8.95',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: 'French Toast + Bacon/Sausage/Linguica/Ham',
+        desc: '3 Slices of toast of your choice + your choice of meat',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: 'Omelet (3 EGGS) Plain',
+        desc: '3 egg omelet',
+        price: '$9.00',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: 'Omelet (3 EGGS) Western',
+        desc: '3 egg omelet',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: 'Omelet (3 EGGS) Cheese',
+        desc: '3 egg omelet',
+        price: '$10.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'breakfast',
+        name: 'Omelet (3 EGGS) Ham & Cheese',
+        desc: '3 egg omelet',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+]
+
+export const productDataLunch1 = [
+    {
+        alt: 'lunch',
+        name: 'Hamburger',
+        desc: 'Plain patty on a burger bun',
+        price: '$8.95',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Cheeseburger',
+        desc: 'Patty with cheese on a burger bun',
+        price: '$8.95',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Ham & Cheese',
+        desc: 'Ham and cheese on your choice of toast',
+        price: '$12.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'GrilledCheese',
+        desc: 'Grilled cheese on your choice of toast',
+        price: '$7.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Grilled Ham & Cheese',
+        desc: 'Ham and cheese melt on your choice of toast',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'B.L.T.',
+        desc: 'Bacon, lettuce and tomato on your choice of toast',
+        price: '$9.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Hot Dog',
+        desc: 'Traditional american hot dog',
+        price: '$7.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Turkey Melt',
+        desc: 'Turkey & cheese melt with russian dressing',
+        price: '$12.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Tuna Melt',
+        desc: 'Tuna fish with mayo on a rye toast with cheese',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+]
+
+export const productDataLunch2 = [
+    {
+        alt: 'lunch',
+        name: 'Ham',
+        desc: '4.5lbs Ham on a Sub Roll with your choice of dressing',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Tuna',
+        desc: '4.5lbs Tuna on a Sub Roll',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Turkey',
+        desc: '4.5lbs Turkey on a Sub Roll',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Hamburger',
+        desc: '2 Burger Patties on a Sub Roll',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+    {
+        alt: 'lunch',
+        name: 'Cheeseburger',
+        desc: '2 Burger Patties with cheese on a Sub Roll',
+        price: '$13.50',
+        button: 'Add to cart'
+    },
+]
+
+export const productDataDrinks = [
+    {
+
+        alt: 'drinks',
+        name: 'Iced Tea',
+        desc: 'tea',
+        price: '$3.50/4.25',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Iced Coffee',
+        desc: 'coffee',
+        price: '$3.50/4.25',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Hot Coffee',
+        desc: 'coffee',
+        price: '$2.50/3.50',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Hot Tea',
+        desc: 'tea',
+        price: '$2.50/3.50',
+        button: 'Add to cart'
+    },
     {
 
         alt: 'drinks',
@@ -174,7 +383,7 @@ export const productDataThree = [
         alt: 'drinks',
         name: 'Orange Juice',
         desc: 'Juice',
-        price: '$2.50',
+        price: '$3.50',
         button: 'Add to cart'
     },
     {
@@ -182,13 +391,21 @@ export const productDataThree = [
         alt: 'drinks',
         name: 'Cranberry Juice',
         desc: 'Juice',
-        price: '$2.50',
+        price: '$3.50',
         button: 'Add to cart'
     },
     {
 
         alt: 'drinks',
         name: 'Apple Juice',
+        desc: 'Juice',
+        price: '$3.50',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Tomato Juice',
         desc: 'Juice',
         price: '$2.50',
         button: 'Add to cart'
@@ -198,7 +415,23 @@ export const productDataThree = [
         alt: 'drinks',
         name: 'Milk',
         desc: 'Dairy',
-        price: '$2.50',
+        price: '$2.50/5.00',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Cocoa',
+        desc: 'Dairy',
+        price: '$3.50',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Lemonade',
+        desc: 'Dairy',
+        price: '$3.50/4.25',
         button: 'Add to cart'
     },
     {
@@ -210,4 +443,56 @@ export const productDataThree = [
         button: 'Add to cart'
     }
     
+]
+
+export const productDataSides = [
+    {
+
+        alt: 'drinks',
+        name: 'Home Fries',
+        price: '$3.95',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Bacon',
+        price: '$4.95',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Ham',
+        price: '$4.95',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Sausage',
+        price: '$4.95',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Linguica',
+        price: '$4.95',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'Toast',
+        price: '$2.95',
+        button: 'Add to cart'
+    },
+    {
+
+        alt: 'drinks',
+        name: 'English Muffin',
+        price: '$2.95',
+        button: 'Add to cart'
+    },
 ]

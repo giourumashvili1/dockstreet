@@ -68,4 +68,24 @@ font-size: 1.5vw;
 
 
 }
+.lunchNavbar{
+  
+  position: relative;
+}
+.sandwichesButton{
+  margin-right: 2rem;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+}
+
+.subsButton{
+  cursor: pointer;
+  color:white;
+  font-size: 2rem;
+
+}
+.sandwichesButton:hover, .subsButton:hover{
+  color: red;
+}
 

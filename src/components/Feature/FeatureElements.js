@@ -14,6 +14,7 @@ align-items: center;
 color:#fff;
 text-align: center;
 padding: 0 1rem;
+margin-top:-5rem;
 
 h1 {
     font-size: clamp(3rem, 5vw, 5rem);
@@ -22,6 +23,10 @@ p {
     margin-bottom: 1rem;
     font-size: clamp(1rem, 3vw, 2rem);
 }
+
+@media screen and (max-width: 650px) {
+    margin-top:-10rem !important;
+  }
 `
 
 export const FeatureButton = styled.button`

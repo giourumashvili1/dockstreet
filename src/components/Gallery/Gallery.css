@@ -1,9 +1,19 @@
+
+@media screen and (max-width: 480px){
+  .mainMenuButton{
+    position: absolute;
+    top: 0;
+    left: 30% !important;
+    font-size: 1.2rem !important;
+  }
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     background-color: black;
     grid-gap: 20px;
     padding: 20px;
+    margin-top: 5vh;
   }
   
   .grid-item {
@@ -20,4 +30,20 @@
     width: 100%;
     height: auto;
   } 
+  .mainMenuButton{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    color: red;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+  }
+  .mainMenuButton:hover{
+    color: black;
+  }
+  .goBackButton{
+    position: absolute !important;
+    top: 2% !important;
+    left: 0 !important;
+  }
   

@@ -10,6 +10,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import MenuPage from './Pages/MenuPage';
 import GalleryPage from './Pages/GalleryPage';
+import AboutPage from './Pages/AboutPage';
 
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/menu' element={<MenuPage />} />
         <Route path='/gallery' element={<GalleryPage />} />
+        <Route path='/about' element={<AboutPage/>}/>
         <Route path='/' element={<App />} />
       </Routes>
 

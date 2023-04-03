@@ -13,6 +13,7 @@ const Hero = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isBigScreen, setIsBigScreen] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
 
 
@@ -22,9 +23,14 @@ const Hero = ({ data }) => {
 
     if (windowSize.current[0] >= 1920) {
       setIsBigScreen(true)
-    } else {
-      setIsBigScreen(false)
+    } else if(windowSize.current[0] >= 1020){
+      setIsDesktop(true)
+    }else if(windowSize.current[0] <= 650){
+      setIsDesktop(false)
     }
+    else {
+      setIsBigScreen(false)
+    } 
   })
 
 
@@ -82,20 +88,22 @@ const Hero = ({ data }) => {
             <HeroHoursHeader>Hours:</HeroHoursHeader>
             <HeroHoursDesc>Open 7 days a week <br />6:30am - 1:30pm <br /></HeroHoursDesc><HeroHoursHeader2>Address:</HeroHoursHeader2><HeroHoursDesc>2 Dock Street, Edgartown<br />TEL : (508) 627-5232 </HeroHoursDesc>
           </HeroHoursContainer>
+          {isDesktop && 
           <HeroMenuContainer>
             <HeroMenuHeading >Specials</HeroMenuHeading>
-            <HeroMenuSign src={data[0].img1} />
-            <HeroMenuSign src={data[0].img2} />
-            <HeroMenuSign src={data[0].img3} />
-            <HeroMenuSign src={data[0].img4} />
-            <HeroMenuSign src={data[0].img5} />
-            <HeroMenuSign src={data[0].img6} />
-
+            <HeroMenuSign loading="lazy"src={data[0].img1} />
+            <HeroMenuSign loading="lazy" src={data[0].img2} />
+            <HeroMenuSign loading="lazy" src={data[0].img3} />
+            <HeroMenuSign loading="lazy" src={data[0].img4} />
+            <HeroMenuSign loading="lazy" src={data[0].img5} />
+            <HeroMenuSign loading="lazy" src={data[0].img6} />
+          
             {isBigScreen && [<HeroMenuSign src={data[0].img7} />,
-            <HeroMenuSign src={data[0].img8} />,
-            <HeroMenuSign src={data[0].img9} />,
-            <HeroMenuSign src={data[0].img10} />]}
+            <HeroMenuSign loading="lazy" src={data[0].img8} />,
+            <HeroMenuSign loading="lazy" src={data[0].img9} />,
+            <HeroMenuSign loading="lazy" src={data[0].img10} />]}
           </HeroMenuContainer>
+          }
         </HeroItems>
       </HeroContent>
       {isClicked && (<div className='modal--window'>

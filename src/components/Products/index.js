@@ -19,7 +19,7 @@ var sliderSettings = {
   slidesToShow: 4,
   slidesToScroll: 2,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 5500,
   cssEase: "linear",
   pauseOnHover: true,
   nextArrow: <MyCustomArrow id="next" />,

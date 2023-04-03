@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           {/* <SidebarLink to='/menu'>Full Menu</SidebarLink> */}
           <SidebarLink to='/gallery'>Gallery</SidebarLink>
           <br />
-          <SidebarLink to='#' >About</SidebarLink>
+          <SidebarLink to='/about' >About</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute onClick={contactButtonHandler} to='/'>CONTACT US</SidebarRoute>

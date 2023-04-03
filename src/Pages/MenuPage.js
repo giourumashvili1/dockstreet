@@ -10,7 +10,7 @@ function MenuPage(props) {
     <MenuPageWrapper >
       <MenuContainer>
         <MenuWrapper className='menuWrapper'>
-          <Menu className='menuComponent' onClick={e => e.stopPropagation()}>
+          <Menu style={{ overflowX: 'hidden' }} className='menuComponent' onClick={e => e.stopPropagation()}>
             <div className="menu">
       <h2 className="menu__title">Dock Street Coffee Shop</h2>
       <nav className='menuNavigation'>

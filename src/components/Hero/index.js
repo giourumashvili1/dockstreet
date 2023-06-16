@@ -23,14 +23,13 @@ const Hero = ({ data }) => {
 
     if (windowSize.current[0] >= 1920) {
       setIsBigScreen(true)
-    } else if(windowSize.current[0] >= 1020){
+    } 
+    if(windowSize.current[0] >= 1020){
       setIsDesktop(true)
-    }else if(windowSize.current[0] <= 650){
+    }
+    if(windowSize.current[0] <= 650){
       setIsDesktop(false)
     }
-    else {
-      setIsBigScreen(false)
-    } 
   })
 
 

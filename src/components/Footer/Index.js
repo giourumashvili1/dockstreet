@@ -28,7 +28,7 @@ const Footer = () => {
                         <a href='https://ilandtech.com' className='designerTag' target="_blank">2023 All Rights Reserved <br/>Designed by iLand Tech</a>
                         
                         <SocialIcons>
-                            <SocialIconLink href='/' target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+                            <SocialIconLink href='https://facebook.com' target="_blank" aria-label="Facebook" rel="noopener noreferrer">
                                 <FaFacebook />
                             </SocialIconLink>
                             <SocialIconLink href='https://www.instagram.com/dockstreetmv/?hl=en' target="_blank" aria-label="Instagram" rel="noopener noreferrer">

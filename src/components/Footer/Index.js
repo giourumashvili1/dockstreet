@@ -25,7 +25,7 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo onClick={scrollUp} to='/'>Dockstreet</SocialLogo>
-                        <a href='https://ilandtech.com' className='designerTag' target="_blank">2023 All Rights Reserved <br/>Designed by iLand Tech</a>
+                        <a style={{fontFamily:"Ubuntu, sans-serif"}} href='https://ilandtech.com' className='designerTag' target="_blank">2023 All Rights Reserved <br/>Designed by iLand Tech</a>
                         
                         <SocialIcons>
                             <SocialIconLink href='https://facebook.com' target="_blank" aria-label="Facebook" rel="noopener noreferrer">
